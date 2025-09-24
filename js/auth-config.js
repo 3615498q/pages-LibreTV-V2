@@ -32,14 +32,14 @@ async function loadMasterConfig() {
             auth: {
                 enabled: true,
                 username: 'admin',
-                password: 'admin123',  // 🔥 修改这里设置自定义密码
+                password: 'wch123',  // 🔥 修改这里设置自定义密码
                 passwordHash: null,
                 sessionDuration: 90 * 24 * 60 * 60 * 1000,
                 maxLoginAttempts: 5,
                 lockoutDuration: 30 * 60 * 1000
             },
             ui: {
-                loginTitle: 'LibreTV 访问验证',
+                loginTitle: '聚合影视 - tv.wch123.top 访问验证',
                 loginPrompt: '请输入访问密码'
             }
         };
@@ -200,4 +200,5 @@ if (typeof window !== 'undefined' && (window.location.hostname === 'localhost' |
             console.log('🔒 密码保护:', masterConfig.auth.enabled ? '已启用' : '已禁用');
         }
     }, 500);
+
 }
